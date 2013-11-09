@@ -1,7 +1,8 @@
 DemoApp::Application.routes.draw do
-  resources :microposts
-
-  resources :users
+  resources :users do
+    resources :microposts
+  end
+  
   
 
   # The priority is based upon order of creation:
